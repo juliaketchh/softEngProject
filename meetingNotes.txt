@@ -1,0 +1,25 @@
+# November 1st, 2023
+
+- webapp format
+  - two main pages
+    - before login
+    - after login
+      - database connection
+      
+- database management
+  - info to store
+    - name
+    - weight
+    - age
+    - height
+    - squat
+    - bench
+    - deadlift
+  - username lookup
+  - friends
+      
+- google account connection
+  
+- cloud
+  - domain
+  - website in bucket
