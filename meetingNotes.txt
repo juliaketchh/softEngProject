@@ -23,3 +23,31 @@
 - cloud
   - domain
   - website in bucket
+
+
+
+# Nov 8, 2023
+- Usman:
+  - How to connect JavaScript files with each other
+  - Look into user authentication - google authentication or auth0
+
+- Danny:
+  - Set up basic Javascript file for web-page (index.js)
+
+- Alexie:
+  - Compile list of workout metrics and goal metrics to keep track of to put into the database later
+  - Get familiar with JavaScript to be able to move info back and forth from mongoDB database
+
+- General info:
+  - LiveServer (VS Code Extension) to view the webpage
+  - mongoDB Atlas to work with the DB
+    - DB Creds:
+    - Username:  default1
+    - Password:  GqDTSIljV4x9db9f
+
+
+
+# November 15th
+- upcoming deadlines:
+  - Monday November 20th: touch base- goals: have front end connected to database and authentication working
+  - Monday November 27th: presentation due
