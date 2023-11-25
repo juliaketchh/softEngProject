@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="Login.css" />
-    <title>Register</title>
+    <link rel="stylesheet" href="styles/Login.css" />
+    <title>Login Page</title>
   </head>
   <body>
     <section>
       <div class="form-box">
         <div class="form-value">
           <form action="">
-            <h2 style="margin-top: 2vh">Register</h2>
+            <h2>Login</h2>
             <div class="inputbox">
               <ion-icon name="mail-outline"></ion-icon>
               <input type="email" required />
@@ -17,25 +17,18 @@
             </div>
             <div class="inputbox">
               <ion-icon name="lock-closed-outline"></ion-icon>
-              <input type="password" required id="userInput1" />
-              <label for="">Create a Password</label>
-            </div>
-            <div class="inputbox">
-              <ion-icon name="lock-closed-outline"></ion-icon>
-              <input type="password" required id="userInput2" />
-              <label for="">Re-enter Password</label>
+              <input type="password" required id="userPass" />
+              <label for="">Password</label>
             </div>
             <div class="forget">
               <label for=""
-                ><input type="checkbox" />Accept
-                <a href="#">Terms & Conditions</a></label
+                ><input type="checkbox" />Remember Me
+                <a href="#">Forget Password</a></label
               >
             </div>
-            <button onclick="comparePassword()">Create Account</button>
+            <button onclick="loginPassword()">Log in</button>
             <div class="register">
-              <p style="padding-bottom: 1vh">
-                Create with <a href="#">Google</a>
-              </p>
+              <p>Don't have a account <a href="Register.html">Register</a></p>
             </div>
           </form>
         </div>
@@ -49,6 +42,6 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
-    <script src="backend.js"></script>
+    <script src="scripts/backend.js"></script>
   </body>
 </html>
