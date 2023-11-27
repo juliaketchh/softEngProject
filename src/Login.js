@@ -1,6 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Login.css'; // Importing the CSS file
 import { Link } from "react-router-dom";
+import { signInWithGoogle,handleClick  } from './authentication';
+import { auth } from './config/firebase';
+
+export const googleSignIn3 = () => {
+  // check auth status first before signing In
+  handleClick();
+};
+
 
 export const LoginPage = () => {
   // Function to handle form submission
@@ -52,7 +60,12 @@ export const Registration = () => {
     };
 
     const termsandConditions = " Terms & Conditions";
-  
+
+    // remove bottom 2 lines
+    // const [email, setEmail] = useState("");   //test
+    // console.log(auth?.currentUser?.email);    //test
+
+
     return (
     <section>
         <div className="form-box">
@@ -82,9 +95,10 @@ export const Registration = () => {
                     </div>
                     <button type="submit">Create Account</button>
                     <div className="register">
-                        <Link to="/login">
-                          <button type="submit">Create with Google</button>
-                        </Link>
+                        {/* <Link to="/login"> */}
+                          <button onClick={googleSignIn3}>Create with Google</button>
+                          {/* <input placeholder="yoo" onChange={(e) => setEmail(e.target.value)} /> */}
+                        {/* </Link> */}
                         <p style={{ paddingBottom: '1vh' }}>
                             {/* Create with <a href="#">Google</a> */}
                         </p>

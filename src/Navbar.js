@@ -12,6 +12,7 @@ import {
   Button,
 } from "./Navbar.style";
 import LogoImg from "./images/dumbell1.png";
+import { logOut, handleClick, authStateCurrent } from './authentication';
 
 
 function Navbar() {
@@ -30,14 +31,14 @@ function Navbar() {
             <NavbarLinkContainer>
                 {/* <Router> */}
                     <NavbarLink to="/"> Home</NavbarLink>
-                    <NavbarLink to="/about"> About Us</NavbarLink>
                     <NavbarLink to="/dashboard"> Dashboard</NavbarLink>
+                    <NavbarLink onClick={logOut}> Log Out</NavbarLink>
                 {/* </Router> */}
             </NavbarLinkContainer>
         </MiddleContainer>
         <RightContainer>
           {/* <Router> */}
-            <Link to="/login">
+            <Link to='/register'>
               <Button>{signANDregisterButton}</Button>
             </Link>
           {/* </Router> */}
