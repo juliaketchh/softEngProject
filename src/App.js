@@ -6,7 +6,7 @@ import { Auth } from './authentication';
 import Navbar from './Navbar'; // Navbar component
 import Home from './Home';    // Home page
 import { LoginPage, Registration } from './Login';        // Log-in page
-import Dashboard from '.Dashboard';
+import Dashboard from './dashboard';
 // import AboutPage from './pages/AboutPage';
 // import ContactPage from './pages/ContactPage';
 

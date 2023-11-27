@@ -71,7 +71,7 @@ export const Registration = () => {
         <div className="form-box">
             <div className="form-value">
                 <form onSubmit={handleSubmit}>
-                    <h2 style={{ marginTop: '2vh' }}>Register</h2>
+                    <h2 style={{ marginTop: '2vh' }}>Login/Register</h2>
                     <div className="inputbox">
                         <ion-icon name="mail-outline"></ion-icon>
                         <input type="email" required />
@@ -96,7 +96,7 @@ export const Registration = () => {
                     <button type="submit">Create Account</button>
                     <div className="register">
                         {/* <Link to="/login"> */}
-                          <button onClick={googleSignIn3}>Create with Google</button>
+                          <button onClick={googleSignIn3}>Sign in with Google</button>
                           {/* <input placeholder="yoo" onChange={(e) => setEmail(e.target.value)} /> */}
                         {/* </Link> */}
                         <p style={{ paddingBottom: '1vh' }}>
