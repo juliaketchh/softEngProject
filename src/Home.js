@@ -1,9 +1,9 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Bootstrap CSS
-import './Home.css'; // Your custom CSS
+import './Home.css'; // Our custom CSS
 // import './ScrollSpy.min.css'; // Assuming this is a CSS file
-import spaceBackground from "./images/Space-Background.png"; // Adjust path as needed
-import flipCardImage from './images/7715988c-75f4-4639-9ff6-0a98ab54e499.png'; // Adjust path as needed
+import spaceBackground from "./images/Space-Background.png"; 
+import flipCardImage from './images/7715988c-75f4-4639-9ff6-0a98ab54e499.png';
 
 const Home = () => {
     return (
@@ -14,14 +14,14 @@ const Home = () => {
             <div className="container-fluid">
                 <div className="row">
                     <div className="col-lg-12" style={{ minHeight: '100vh', color: 'white', textAlign: 'center', marginTop: '0vh', backgroundImage: `url(${spaceBackground})`, backgroundSize: 'cover' }}>
-                        <h1 style={{ marginTop: '45vh' }}>WELCOME AMIGO,</h1>
+                        <h1 style={{ marginTop: '45vh' }}>Welcome amiGO,</h1>
                         <h2>Lets get started today!</h2>
                     </div>
                     
 
                 </div>
 
-                {/* ... rest of your rows and columns ... */}
+                {/* ... rest of our rows and columns ... */}
 
                 <div className="row">
                     <div className="col-lg-6" style={{ minHeight: '100vh', color: 'white', textAlign: 'center', marginTop: '25vh' }}>

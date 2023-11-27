@@ -1,19 +1,26 @@
-// Organize App in this file
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+// import './App.css';
 
-import Navbar from './Navbar';
-import Home from './Home';
-import { Auth } from "./authentication";
+import Navbar from './Navbar'; // Navbar component
+import Home from './Home';    // Home page/component
+// import AboutPage from './pages/AboutPage';
+// import ContactPage from './pages/ContactPage';
 
 function App() {
-
-  // const title = "App Component";
-
   return (
     <div className="App">
-      {/* <Auth /> */}
+      {/* <Auth />             ADD IN AUTHENTICATION*/}
       <Navbar />
+
       <div className="content">
-        <Home />
+        <Router>
+          <Routes>
+            <Route exact path="/" element={ <Home /> } />
+            {/* <Route path="/about" element={AboutPage} /> */}
+            {/* <Route path="/contact" element={ContactPage} />   test -> replace "element" with "component" */}
+          </Routes>
+        </Router>
       </div>
     </div>
   );
