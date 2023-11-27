@@ -8,6 +8,7 @@ export const NavbarContainer = styled.nav`
   display: flex;
   flex-direction: column;
   background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
+  /* background: transparent; */
 
   @media (min-width: 700px) {
     height: 80px;

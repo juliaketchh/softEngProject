@@ -13,6 +13,7 @@ import {
 } from "./Navbar.style";
 import LogoImg from "./images/dumbell1.png";
 
+
 function Navbar() {
 //   const [extendNavbar, setExtendNavbar] = useState(false);
 
@@ -27,15 +28,19 @@ function Navbar() {
         </LeftContainer>
         <MiddleContainer>
             <NavbarLinkContainer>
-                <Router>
+                {/* <Router> */}
                     <NavbarLink to="/"> Home</NavbarLink>
                     <NavbarLink to="/about"> About Us</NavbarLink>
                     <NavbarLink to="/dashboard"> Dashboard</NavbarLink>
-                </Router>
+                {/* </Router> */}
             </NavbarLinkContainer>
         </MiddleContainer>
         <RightContainer>
-            <Button> {signANDregisterButton} </Button>
+          {/* <Router> */}
+            <Link to="/login">
+              <Button>{signANDregisterButton}</Button>
+            </Link>
+          {/* </Router> */}
         </RightContainer>
       </NavbarInnerContainer>
     </NavbarContainer>
